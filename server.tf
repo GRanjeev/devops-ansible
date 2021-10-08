@@ -2,9 +2,9 @@ provider "aws" {
 region = "ap-south-1"
 }
 resource "aws_instance" "myawsserver" {
-  ami = "ami-026f33d38b6410e30"
+  ami = "ami-041d6256ed0f2061c"
   instance_type = "t2.micro"
-  key_name = "test"
+  key_name = "terra1"
 
   tags = {
     Name = "Greeshma-devops-ec2-instance"
