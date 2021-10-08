@@ -2,12 +2,12 @@ provider "aws" {
 region = "us-east-2"
 }
 resource "aws_instance" "myawsserver" {
-  ami = "ami-077e31c4939f6a2f3"
+  ami = "ami-026f33d38b6410e30"
   instance_type = "t2.micro"
-  key_name = "gagan-import"
+  key_name = "terra1"
 
   tags = {
-    Name = "Gagan-devops-ec2-instance"
+    Name = "Greeshma-devops-ec2-instance"
     env = "prod"
   }
   provisioner "local-exec" {
